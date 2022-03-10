@@ -1,0 +1,8 @@
+.footer address ul {
+  display: flex;
+}
+.footer address ul li:nth-child(even) {
+  margin: 0 2rem;
+}
+
+/*# sourceMappingURL=tablet-and-desktop.css.map */

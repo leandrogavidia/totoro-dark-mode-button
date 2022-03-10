@@ -4,30 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toggle button dark mode</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Totoro Toggle button dark mode</title>
+    <link rel="stylesheet" href="styles/css/normalize.css">
+    <link rel="stylesheet" href="styles/css/mobile.css">
+    <link rel="stylesheet" href="styles/css/tablet-and-desktop.css" media="screen and (min-width: 600px)">
+    <link rel="shortcut icon" href="assets/image/totoro-logo.png" type="image/x-icon">
 </head>
 <body>
 
-    <main>
+    <header class="header">
+        <img src="assets/image/totoro-logo.png" alt="Tororo logo" title="Totoro logo" width="150">
+    </header>
+
+    <main class="main-content" id="main-content">
         <input id="toggle-button" type="checkbox">    
-        <label for="toggle-button">
-            <div class="light-dark"></div>
-        </label>
+        <label for="toggle-button"></label>
     </main> 
 
-    <footer>
-        <p>Created by: Leandro Gavidia Santamaria</p>
-        <address>
-            <ul>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">LinkedIn</a></li>
-                <li><a href="">GitHub</a></li>
+    <footer class="footer">
+        <img class="lgs-logo" src="assets/image/logo-lgs.png" alt="Logo LGS" title="Logo LGS" width="160">
+        <address class="social-media">
+            <ul id="lista">
+                <li><a href="https://www.facebook.com/LeanderGS/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/leander_gs/" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com/Leander_GS" target="_blank">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/leandro-gavidia/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/LeanderGS" target="_blank">GitHub</a></li>
             </ul>
         </address>
-        <img src="image/logo-lgs.png" alt="Logo LGS" title="Logo LGS">
+        <p class="firm">Created by: Leandro Gavidia Santamaria</p>
     </footer>
     
     <script src="scripts.js"></script>

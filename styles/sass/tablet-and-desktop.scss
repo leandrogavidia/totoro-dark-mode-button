@@ -1,0 +1,8 @@
+.footer {
+    address ul {
+        display: flex;
+        li:nth-child(even) {
+        margin: 0 2rem;
+        }    
+     }
+}

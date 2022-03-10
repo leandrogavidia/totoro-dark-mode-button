@@ -1,0 +1,118 @@
+@import "variables";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: nunito, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+  
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    font-size: 1.6rem;
+}
+
+:focus-visible {
+    outline: 2px solid $dark-0;
+}
+
+.header {
+    display: grid;
+    place-content: center;
+    background-color: #212529;
+    width: 100%;
+    height: 10rem;
+}
+
+.main-content {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 60rem;
+    background-image: url("../../assets/image/totoro-background-light.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+    input {
+        position: absolute;
+        visibility: hidden;
+        &:checked + label {
+            background-image: url("../../assets/image/totoro-night.gif");
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: rgba(0, 0, 0, 0.4) 0 0 0.6rem 0.1rem;
+        }
+        &:checked + label::before {
+            background: radial-gradient(var(--dark-1), var(--dark-2));
+            box-shadow: rgba(0, 0, 0, 0.4) 0 0 0.6rem 0.1rem;
+            transform: translateX(6rem);
+        }
+    }
+    label {
+        display: inline-block;
+        position: relative;
+        width: 13.6rem;
+        height: 7.6rem;
+        background-image: url("../../assets/image/totoro-light.gif");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 4rem;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 0 0.6rem 0.1rem;
+        &::before {
+            content: "";
+            width: 6rem;
+            height: 6rem;
+            margin: 0.8rem;
+            background: radial-gradient( lightyellow , lightsteelblue);
+            border-radius: 50%;
+            position: absolute;
+            cursor: pointer;
+            opacity: 0.3;
+            transition: transform 0.5s ease;
+        }
+    }
+}
+
+main.dark {
+    background-image: url("../../assets/image/totoro-background-dark.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+}
+
+.footer {
+    background-color: $dark-2;
+    display: flex;
+    padding: 6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    address ul {
+        list-style: none;
+        text-align: center;
+        margin: 6rem 0;
+        li a {
+            color: $light-1;
+            text-decoration: none;
+            &:hover {
+                color: $dark-0;
+            }
+            }
+        li:nth-child(even) {
+            margin: 2rem 0;
+        }    
+    }
+    p {
+        color: $light-1;
+        text-align: center;
+        line-height: 2;
+    }
+}
