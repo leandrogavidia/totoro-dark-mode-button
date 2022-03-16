@@ -1,6 +1,6 @@
 # Totoro dark mode button
 
-|![Tororo light](https://i.ibb.co/QXbxYhY/totoro1.jpg)|![Totoro dark](https://i.ibb.co/WvBB2Xy/totoro2.jpg)|
+|![Totoro light](https://i.ibb.co/C8fCHSC/Totoro-1.png)|![Totoro dark](https://i.ibb.co/54Zn041/Totoro-2.png)|
 |--|--|
 |Totoro light|Totoro dark|
 
